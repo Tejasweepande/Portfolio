@@ -40,7 +40,6 @@ for (let i = 0; i < navbar.length; i++) {
 
 function viewMore(content, sectionName) {
     sectionName.addEventListener("click", () => {
-        console.log(sectionName.innerHTML)
         if(sectionName.innerHTML === "View More"){
             for (let i = 0; i < content.length; i++) {
                 content[i].style.display = "flex";
@@ -50,7 +49,7 @@ function viewMore(content, sectionName) {
             for (let i = 0; i < content.length; i++) {
                 content[i].style.display = "none";
             }
-            sectionName.innerHTML="View more";
+            sectionName.innerHTML="View More";
         }
     })
 }
