@@ -50,8 +50,7 @@ function viewMore(content, sectionName) {
             for (let i = 0; i < content.length; i++) {
                 content[i].style.display = "none";
             }
-            sectionName.innerHTML="View More";
-            window.location.href()
+            sectionName.innerHTML="View more";
         }
     })
 }
