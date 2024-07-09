@@ -38,9 +38,9 @@ for (let i = 0; i < navbar.length; i++) {
     });
 }
 
-function viewMore(content, sectionName) {
-    sectionName.addEventListener("click", () => {
-        if(sectionName.innerHTML === "View More"){
+function toggleVisibility(content, sectionName) {
+    
+        if(sectionName.textContent.trim() === "View More"){
             for (let i = 0; i < content.length; i++) {
                 content[i].style.display = "flex";
             }
@@ -51,15 +51,16 @@ function viewMore(content, sectionName) {
             }
             sectionName.innerHTML="View More";
         }
-    })
 }
 
 var hiddenBlogs = document.getElementsByClassName("blog-hidden")
 var blogItem = document.getElementById("show");
-viewMore(hiddenBlogs, blogItem);
+blogItem.addEventListener("click", () => {
+    toggleVisibility(hiddenBlogs,blogItem);
+})
 
 var hiddenProjects = document.getElementsByClassName("hidden-projects")
 var projectItem = document.getElementById("show-project");
-viewMore(hiddenProjects, projectItem);
-
-
+projectItem.blogItem.addEventListener("click", () => {
+    toggleVisibility(hiddenProjects, projectItem);
+})
