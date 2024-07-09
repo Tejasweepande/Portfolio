@@ -61,6 +61,6 @@ blogItem.addEventListener("click", () => {
 
 var hiddenProjects = document.getElementsByClassName("hidden-projects")
 var projectItem = document.getElementById("show-project");
-projectItem.blogItem.addEventListener("click", () => {
+projectItem.addEventListener("click", () => {
     toggleVisibility(hiddenProjects, projectItem);
 })
