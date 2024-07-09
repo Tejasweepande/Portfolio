@@ -711,6 +711,7 @@ main {
   height: fit-content;
   justify-content: space-between;
   box-sizing: border-box;
+  margin-top:auto;
 }
 
 .card .btn-view-project .btn {
