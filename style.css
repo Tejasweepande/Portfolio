@@ -699,7 +699,7 @@ main {
   color: #525665;
   margin: 0 0 1rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-line-clamp: 4; /* Number of lines to show */
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1249,9 +1249,9 @@ main {
   border-radius: 0.6rem;
   background: #ff774c;
   display: flex;
-  padding: 1.1rem 0 1.2rem 0;
+  padding: 0.9rem 0 1rem 0;
   border: none;
-  width: 13.9rem;
+  width: 13rem;
   height: fit-content;
   justify-content: center;
   box-sizing: border-box;
@@ -1265,7 +1265,7 @@ main {
 
 .graduation-project .btn-view-ga-project a {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   line-height: 1.285;
   color: #ffffff;
