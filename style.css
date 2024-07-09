@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 16px;
+  font-size: 15px;
   vertical-align: baseline;
   /* font: inherit; */
   box-sizing: border-box;
@@ -417,8 +417,16 @@ main {
   flex: 3;
   justify-content: space-around;
   overflow-x: scroll;
+  
   overflow-y: hidden;
   position: relative;
+}
+.work-experience .work-history::-webkit-scrollbar {
+  display:none;
+}
+.work-experience .work-history{
+  -ms-overflow-style: none;
+  scrollbar-width:none;
 }
 
 .work-experience .title {
